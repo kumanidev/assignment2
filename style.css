@@ -1,0 +1,47 @@
+
+body {
+    border: 1px solid black;
+  }
+  
+  article {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    background-color: #f0f8ff;
+  }
+  
+  article h2{
+    font-size: 40px;
+  }
+  
+  article h3{
+    font-size: 30px;
+  }
+  
+  header {
+    text-align: center;
+    border-style: dotted;
+    padding: 0 1em;
+    margin: 0 auto;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(61, 61, 209, 0.8432835820895522) 57%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+  
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 0 auto;
+    background: yellowgreen;
+    border: 1px solid black;
+  }
+  
+  
+  
