@@ -13,9 +13,17 @@
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/28173e6677.js" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="js/style.js" defer></script> 
+
+ 
+ 
+
 </head>
-<body>
-    
+<body class="offsite-is-open">
+  <section class="site-container">
     <header>
       <h1 class="heading">The Caribbean Greater Antilles </h1>
     </header>
@@ -45,7 +53,21 @@
           </div>
         </div>
       </nav>
+    
     <br>
+
+    <!--
+      <div class="contactMenuButton">
+      <button>
+        <span>Get Contact Info</span>
+      </button>
+    </div>
+    -->
+
+    
+    
+  
+
 
     <section id="images">
 
@@ -88,7 +110,7 @@
   <br>
   <br>
 
-  <section class="about">
+  <section class="about" id="about">
     <h3>About the Greater Antilles</h3>
     <p>Greater Antilles consists four of the largest islands in the Caribbean. These islands are Cuba, Hispaniola, Jamaica, and Puerto Rico.
       They constitute nearly 90 percent of the total land area of the entire West Indies. Hispaniola is comprised of two islands, namely Haiti and Dominican Republic. 
@@ -128,6 +150,7 @@
   </section>
 
   <br>
+  <button type="button" class="newButton">Click Me!</button>
   
 
 
@@ -167,7 +190,32 @@
     </table>
   
   </section>
+
   
+  <h4>The countries and their National Dishes:</h4>
+  <div class="arraySection">
+    
+  </div>
+  <br>
+  <br>
+
+  <p class="newPara"></p>
+
+  <p class="jQueryPara">The purpose of this paragraph is to edit content using jQuery</p>
+  
+  
+  <br><br>
+  <p class="jQueryPara2">Create a button and add an event that adds some content at the beginning of a paragraph.</p>
+  <button class="jQueryButton">Click to Add Content</button>
+  
+
+  <br>
+  <br>
+  <h4>Apex  Bar Chart (Number of Counties/Provinces/Regions)</h4>
+  <div id="barChart"></div>
+
+
+
   <br>
   <footer class="page-footer dark">
       <div class="container">
@@ -176,7 +224,7 @@
                 <i class="fa-brands fa-angellist"></i>
                   <ul>
                       <h5>References</h5>
-                      <li>https://www.geographyrealm.com/caribbean-islands-greater-antilles/</li>
+                      <li><a class="link" id = "link"> https://www.geographyrealm.com/caribbean-islands-greater-antilles/</a></li>
                       <li>https://www.thoughtco.com/islands-in-greater-and-lesser-antilles-4069042</li>
                       <li>https://saylordotorg.github.io/text_world-regional-geography-people-places-and-globalization/section_08/32ac72b9554942a4f7564f9aeb4c6a0f.jpg</li>
                   </ul>
@@ -186,6 +234,25 @@
     </footer>
 
 </article>
+</section>
+
+
+<!--<div class = "offsite-container">
+  <nav class="navigation">
+    <ul>
+      <h5>Contact Info</h5>
+      <li>Email: greaterantilles@gmail.com </li>
+      <li>Phone number: 876-777-7777</li>
+      <li>Instagram: greaterantillespage</a></li>
+      <li>Facebook: Caribbean Greater Antilles</li>
+    </ul>
+  </nav>
+</div>-->
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
