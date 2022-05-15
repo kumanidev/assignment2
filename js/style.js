@@ -4,16 +4,17 @@ headingSection.style.color = "blue";
 
 headingSection.style.setProperty('font-size', '4rem');
 
+//Edit: add class to html tag with .setAtrribute
+const editSection = document.querySelector('.htmlClassEdit');
+editSection.setAttribute('class', 'pageBottom');
 
-//const footerSection = document.querySelector('class', '.page-footer');
-//footerSection.setAttribute('class', 'pageBottom');
+newEditSection = document.querySelector(".pageBottom");
+newEditSection.style.color = "red";
 
-//const newFooterSection = document.querySelector(".pageBottom");
-//newFooterSection.style.color = "red";
 
-//const aboutSection = document.querySelector(".about")
-//document.getElementById("link").setAttribute("href", "https://www.geographyrealm.com/caribbean-islands-greater-antilles/")
-document.querySelector(".link").setAttribute("href", "https://www.geographyrealm.com/caribbean-islands-greater-antilles/")
+
+document.getElementById("link").setAttribute("href", "https://www.geographyrealm.com/caribbean-islands-greater-antilles/"); 
+document.querySelector(".link").setAttribute("href", "https://www.geographyrealm.com/caribbean-islands-greater-antilles/");
 
 const newParagraph = document.querySelector(".newPara");
 
@@ -28,16 +29,6 @@ myButton.addEventListener('click', function(){
 
 });
 
-/*
-const arrayOfNationalDish = {
-    Cuba: 'Ropa Vieja',
-    DominicanRepublic: 'La Bandera',
-    Haiti: 'Soupe joumou',
-    Jamaica: 'Ackee and Saltfish',
-    PuertoRico: 'Arroz con Gandules'
-}
-console.log(arrayOfNationalDish);
-*/
 
 
 var arrayOfNationalDish = new Array();
@@ -50,35 +41,29 @@ arrayOfNationalDish[4] = " Puerto Rico: Arroz con Gandules";
 const myArray = document.querySelector(".arraySection");
 myArray.innerHTML = arrayOfNationalDish;
 
-//document.write(arrayOfNationalDish.toString())
-
-/*
-for (let i = 0; i < arrayOfNationalDish.length; i++) {
-    document.writeln(items[i]);
-}
-*/
-
-/* //Creating Slide Panel
-const contactMenuButton = document.querySelector('.contactMenuButton');
-const body = document.body;
 
 
-contactMenuButton.addEventListener('click', _=> {
-    body.classList.toggle('offsite-is-open');
-})
-*/
+//Edit:----RANDOM COLORS CODE ----
 
-
-
-
-//jQuery content
-/*
-$(document).ready(function(){
-    $(".jQueryPara").replaceWith("<h4>New HTML content</h4>");
-
+const buttonColor = document.querySelector('.changeColor');
+const wrapper = document.querySelector('.about');
+buttonColor.addEventListener('click', () => {
+  wrapper.style.backgroundColor = colors();
 });
-*/
-//$(".jQueryPara").replaceWith("Hello World!");
+
+
+function colors(){
+  let colorArray = [];
+  for(let i=0; i<3; i++){
+    colorArray.push(Math.floor(Math.random() * (255 - 0) + 0));
+  }
+
+  let color = colorArray
+    .map(x => x.toString(16))
+    .join('');
+
+    return `#${color}`;
+}
 
 
 
@@ -125,9 +110,6 @@ options = {
   
 var chart = new ApexCharts(document.querySelector("#barChart"), options);
 chart.render();
-
-
-
 
 
 
